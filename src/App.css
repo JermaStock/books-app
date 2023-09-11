@@ -24,6 +24,16 @@ body {
     opacity: .4;
 }
 
+.card {
+    scale: 1;
+    transition: all .15s ease-in-out !important;
+    cursor: pointer;
+}
+
+.card:hover {
+    scale: 1.05;
+}
+
 @media (max-width: 576px) {
     .large-thumbnail {
         height: 475px;

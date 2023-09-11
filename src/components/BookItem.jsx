@@ -8,6 +8,7 @@ const BookItem = ({ book }) => {
   return (
     <Grid xs={12} sm={6} md={3} item>
       <Card
+        className="card"
         onClick={() => router(`/books/${book.id}`)}
         sx={{ height: "100%", display: "flex", flexDirection: "column", background: '#eceff1' }}
       >
