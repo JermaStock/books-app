@@ -1,6 +1,29 @@
-# Докер контейнер запускает сервер по адресу localhost:3000
+# Приложение можно запустить с помощью docker несколькими способами
 
-# Ссылка на docker Hub с проектом
+## Запуск контейнера из папки с текущим репозиторием
+
+В папке репозитория выполните команду:
+
+``````
+docker-compose up
+``````
+После чего контейнер запустит приложение по адресу http://localhost:3000
+
+
+## Пул образа с репозитория docker hub 
+
+Ссылка на хаб с репозиторием: https://hub.docker.com/r/jermastock/react-book-app
+
+При создании контейнера необходимо прописать 
+
+``````
+docker run -p 3000:3000 --name react-book-app jermastock/react-book-app
+``````
+
+Важно связать порты при создании контейнера -p 3000:3000
+
+
+
 
 
 
@@ -27,3 +50,5 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### npm run build
